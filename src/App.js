@@ -2,13 +2,11 @@ import React from 'react';
 import './App.scss';
 import { Button, Typography } from '@mui/material';
 import { Add, Settings, } from '@mui/icons-material';
-import { margin } from '@mui/system';
 import styled from '@emotion/styled';
 
 function App() {
-
-  const BlueButton = styled(Button) (({theme})=>({
-    backgroundColor:theme.palette.otherColor.main,
+  const BlueButton = styled(Button) ({
+    backgroundColor:"skyblue",
     color:"#888",
     margin:5,
     "&:hover":{
@@ -18,7 +16,7 @@ function App() {
       backgroundColor:"gray",
       color:"white",
     }
-  }))
+  })
   
 	return (
 		<div>
