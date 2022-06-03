@@ -67,10 +67,10 @@ const Navbar = () => {
 					<Avatar
 						sx={{ width: 30, height: 30 }}
 						src='https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png'
-						// onClick={() => setOpen(true)}
+						onClick={() => setOpen(true)}
 					/>
 				</Icons>
-				<UserBox >
+				<UserBox onClick={() => setOpen(true)}>
 					<Avatar
 						sx={{ width: 30, height: 30 }}
 						src='https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png'
