@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material';
 import { AccountBox, AccountCircle, Assignment, Group, Home, ModeNight, Settings, Storefront } from '@mui/icons-material';
 
 const Sidebar = () => {
@@ -72,7 +72,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <ModeNight/>
               </ListItemIcon>
-              <ListItemText primary="Profile" />
+              <Switch/>
             </ListItemButton>
           </ListItem>
           </List>
