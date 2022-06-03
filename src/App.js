@@ -3,12 +3,13 @@ import './App.scss';
 import Sidebar from './Components/Sidebar';
 import Feed from './Components/Feed';
 import Rightbar from './Components/Rightbar';
-import { Box, Container, Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
+import Navbar from './Components/Navbar';
 
 function App() {
 	return (
 		<Box>
-			{/* navbar */}
+			<Navbar />
 			<Stack direction={'row'} spacing={2} justifyContent="space-between">
 				<Sidebar />
 				<Feed />
