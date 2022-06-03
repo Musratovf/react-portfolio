@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
 import {
 	AppBar,
 	Toolbar,
@@ -53,7 +54,7 @@ const Navbar = () => {
 					sx={{ display: { xs: 'none', sm: 'block' } }}>
 					Farrukh dev
 				</Typography>
-				<Pets sx={{ display: { xs: 'block', sm: 'none' } }} />
+				<MenuIcon sx={{ display: { xs: 'block', sm: 'none' } }} />
 				<Search>
 					<InputBase placeholder='Search...' />
 				</Search>
