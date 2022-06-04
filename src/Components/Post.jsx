@@ -16,7 +16,7 @@ import {
 const Post = () => {
 	return (
 		<div>
-			<Card sx={{margin:5}}>
+			<Card sx={{margin:2}}>
 				<CardHeader
 					avatar={
 						<Avatar
