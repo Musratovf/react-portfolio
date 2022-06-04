@@ -1,5 +1,5 @@
 import React from 'react';
-import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material';
+import { Favorite, FavoriteBorder, Margin, MoreVert, Share } from '@mui/icons-material';
 import {
 	Avatar,
 	Card,
@@ -12,11 +12,12 @@ import {
 	IconButton,
 	Typography,
 } from '@mui/material';
+import "./main.css"
 
 const Post = () => {
 	return (
-		<div>
-			<Card sx={{margin:2}}>
+		<div >
+			<Card  sx={{margin:2}}>
 				<CardHeader
 					avatar={
 						<Avatar
