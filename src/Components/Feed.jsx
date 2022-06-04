@@ -1,10 +1,10 @@
-import { Box } from '@mui/system'
+import { Box, margin } from '@mui/system'
 import React from 'react'
 import Post from './Post'
 
 const Feed = () => {
   return (
-    <Box flex={4} marginLeft={100}>
+    <Box flex={4} margin={0}>
       <Post/>
       <Post/>
       <Post/>
