@@ -5,7 +5,7 @@ import { Add as AddIcon } from "@mui/icons-material"
 const Add = () => {
 	return (
 		<>
-			<Tooltip title='Delete'>
+			<Tooltip title='Delete' sx={{ position:"fixed", bottom:20 }}>
 				<Fab color='primary' aria-label='add'>
 					<AddIcon />
 				</Fab>
