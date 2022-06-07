@@ -1,7 +1,7 @@
 import { Avatar, Fab, Modal, Stack, styled, TextField, Tooltip, Typography } from '@mui/material';
 import { React, useState } from 'react';
 import { Add as AddIcon, EmojiEmotions } from '@mui/icons-material';
-import { Box, width } from '@mui/system';
+import { Box } from '@mui/system';
 
 const Add = () => {
 	const [open, setOpen] = useState(false);
@@ -38,7 +38,7 @@ const Add = () => {
 				onClose={(e) => setOpen(false)}
 				aria-labelledby='modal-modal-title'
 				aria-describedby='modal-modal-description'>
-				<Box width={400} height={200} bgcolor='white' p={2}>
+				<Box width={400} height={300} bgcolor='white' p={2}>
 					<Typography variant='h6' color='gray' textAlign='center'>
 						Create new Post
 					</Typography>
