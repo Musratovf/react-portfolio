@@ -1,12 +1,15 @@
-import { Tooltip } from '@mui/material';
+import { Fab, Tooltip } from '@mui/material';
 import React from 'react';
+import { Add as AddIcon } from "@mui/icons-material"
 
 const Add = () => {
 	return (
 		<>
 			<Tooltip title='Delete'>
-                
-            </Tooltip>
+				<Fab color='primary' aria-label='add'>
+					<AddIcon />
+				</Fab>
+			</Tooltip>
 		</>
 	);
 };
