@@ -1,4 +1,4 @@
-import { Fab, Modal, Tooltip } from '@mui/material';
+import { Fab, Modal, styled, Tooltip } from '@mui/material';
 import { React, useState } from 'react';
 import { Add as AddIcon } from '@mui/icons-material';
 import { Box } from '@mui/system';
@@ -6,6 +6,12 @@ import { Box } from '@mui/system';
 const Add = () => {
 
     const [open, setOpen] = useState(false );
+    
+    const StyledModal = styled(Modal)({
+        display:'flex',
+        alignItems:"center",
+        justifyContent:"center"
+    })
     
 	return (
 		<>
@@ -21,15 +27,15 @@ const Add = () => {
 					<AddIcon />
 				</Fab>
 			</Tooltip>
-			<Modal
+			<StyledModal
 				open={open}
 				onClose={e=>setOpen(false)}
 				aria-labelledby='modal-modal-title'
 				aria-describedby='modal-modal-description'>
-				<Box>
+				<Box width={400} height={100} bgcolor="white" p={2} display='flex' flexDirection="column" textAlign="center" justifyContent="center">
 					Hello
 				</Box>
-			</Modal>
+			</StyledModal>
 		</>
 	);
 };
