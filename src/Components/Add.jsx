@@ -1,7 +1,7 @@
-import { Avatar, Fab, Modal, styled, TextField, Tooltip, Typography } from '@mui/material';
+import { Avatar, Fab, Modal, Stack, styled, TextField, Tooltip, Typography } from '@mui/material';
 import { React, useState } from 'react';
-import { Add as AddIcon } from '@mui/icons-material';
-import { Box } from '@mui/system';
+import { Add as AddIcon, EmojiEmotions } from '@mui/icons-material';
+import { Box, width } from '@mui/system';
 
 const Add = () => {
 	const [open, setOpen] = useState(false);
@@ -52,13 +52,20 @@ const Add = () => {
 						</Typography>
 					</UserBox>
 					<TextField
+                        sx={{width:"100%"}}
 						id='standard-multiline-static'
 						label='Multiline'
 						multiline
-						rows={4}
-						defaultValue='Default Value'
+						rows={3}
+						placeholder="What's on your mind? "
 						variant='standard'
 					/>
+                    <Stack direction="row" gap={1} mt={2} mb={3}>
+                        <EmojiEmotions/>
+                        <EmojiEmotions/>
+                        <EmojiEmotions/>
+                        <EmojiEmotions/>
+                    </Stack>
 				</Box>
 			</StyledModal>
 		</>
