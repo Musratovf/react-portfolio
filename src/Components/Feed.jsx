@@ -4,7 +4,7 @@ import Post from './Post'
 import "./main.css"
 const Feed = () => {
   return (
-    <Box className='boxes' flex={4}>
+    <Box className='boxes' p={1} flex={4}>
       <Post/>
       <Post/>
       <Post/>
