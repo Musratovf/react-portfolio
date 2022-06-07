@@ -1,4 +1,4 @@
-import { Fab, Modal, styled, Tooltip } from '@mui/material';
+import { Fab, Modal, styled, Tooltip, Typography } from '@mui/material';
 import { React, useState } from 'react';
 import { Add as AddIcon } from '@mui/icons-material';
 import { Box } from '@mui/system';
@@ -32,8 +32,9 @@ const Add = () => {
 				onClose={e=>setOpen(false)}
 				aria-labelledby='modal-modal-title'
 				aria-describedby='modal-modal-description'>
-				<Box width={400} height={100} bgcolor="white" p={2} display='flex' flexDirection="column" textAlign="center" justifyContent="center">
-					Hello
+				<Box width={400} height={100} bgcolor="white" p={2} >
+                    <Typography variant='h6' color="gray" textAlign="center">Create new Post</Typography>
+                    
 				</Box>
 			</StyledModal>
 		</>
