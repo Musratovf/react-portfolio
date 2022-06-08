@@ -1,6 +1,23 @@
-import { Avatar, Fab, Modal, Stack, styled, TextField, Tooltip, Typography } from '@mui/material';
+import {
+	Avatar,
+	Button,
+	ButtonGroup,
+	Fab,
+	Modal,
+	Stack,
+	styled,
+	TextField,
+	Tooltip,
+	Typography,
+} from '@mui/material';
 import { React, useState } from 'react';
-import { Add as AddIcon, EmojiEmotions, Image, PersonAdd, VideoCameraBack } from '@mui/icons-material';
+import {
+	Add as AddIcon,
+	EmojiEmotions,
+	Image,
+	PersonAdd,
+	VideoCameraBack,
+} from '@mui/icons-material';
 import { Box } from '@mui/system';
 
 const Add = () => {
@@ -52,7 +69,7 @@ const Add = () => {
 						</Typography>
 					</UserBox>
 					<TextField
-                        sx={{width:"100%"}}
+						sx={{ width: '100%' }}
 						id='standard-multiline-static'
 						label='Multiline'
 						multiline
@@ -60,12 +77,19 @@ const Add = () => {
 						placeholder="What's on your mind? "
 						variant='standard'
 					/>
-                    <Stack direction="row" gap={1} mt={2} mb={3}>
-                        <EmojiEmotions color='primary'/>
-                        <Image color='secondary'/>
-                        <VideoCameraBack color='success'/>
-                        <PersonAdd color='error'/>
-                    </Stack>
+					<Stack direction='row' gap={1} mt={2} mb={3}>
+						<EmojiEmotions color='primary' />
+						<Image color='secondary' />
+						<VideoCameraBack color='success' />
+						<PersonAdd color='error' />
+					</Stack>
+					<ButtonGroup
+						variant='contained'
+						aria-label='outlined primary button group'>
+						<Button>One</Button>
+						<Button>Two</Button>
+						<Button>Three</Button>
+					</ButtonGroup>
 				</Box>
 			</StyledModal>
 		</>
