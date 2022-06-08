@@ -56,7 +56,7 @@ const Add = () => {
 				onClose={(e) => setOpen(false)}
 				aria-labelledby='modal-modal-title'
 				aria-describedby='modal-modal-description'>
-				<Box width={400} height={300} bgcolor='white' p={2}>
+				<Box width={400} height={300} bgcolor={"Background.default"} color={"text.primary"} p={2}>
 					<Typography variant='h6' color='gray' textAlign='center'>
 						Create new Post
 					</Typography>

@@ -12,7 +12,7 @@ import { useState } from 'react';
 
 function App() {
 
-	const [mode, setMode] = useState("dark");
+	const [mode, setMode] = useState("light");
 
 	const darkTheme = createTheme ({
 		palette:{
@@ -22,10 +22,10 @@ function App() {
 	
 	return (
 	<ThemeProvider theme={darkTheme}>
-		<Box bgcolor={"Background.default"}>
+		<Box bgcolor={"Background.default"} color={"text.primary"}>
 			<Navbar />
 			<Stack direction={'row'} spacing={2} justifyContent="space-between">
-				<Sidebar />
+				<Sidebar setMode={setMode} mode={mode} />
 				<Feed />
 				<Rightbar />
 			</Stack>
