@@ -1,6 +1,6 @@
 import { Avatar, Fab, Modal, Stack, styled, TextField, Tooltip, Typography } from '@mui/material';
 import { React, useState } from 'react';
-import { Add as AddIcon, EmojiEmotions } from '@mui/icons-material';
+import { Add as AddIcon, EmojiEmotions, Image, PersonAdd, VideoCameraBack } from '@mui/icons-material';
 import { Box } from '@mui/system';
 
 const Add = () => {
@@ -61,10 +61,10 @@ const Add = () => {
 						variant='standard'
 					/>
                     <Stack direction="row" gap={1} mt={2} mb={3}>
-                        <EmojiEmotions/>
-                        <EmojiEmotions/>
-                        <EmojiEmotions/>
-                        <EmojiEmotions/>
+                        <EmojiEmotions color='primary'/>
+                        <Image color='secondary'/>
+                        <VideoCameraBack color='success'/>
+                        <PersonAdd color='error'/>
                     </Stack>
 				</Box>
 			</StyledModal>
