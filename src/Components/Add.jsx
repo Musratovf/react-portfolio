@@ -13,6 +13,7 @@ import {
 import { React, useState } from 'react';
 import {
 	Add as AddIcon,
+	DateRange,
 	EmojiEmotions,
 	Image,
 	PersonAdd,
@@ -84,11 +85,11 @@ const Add = () => {
 						<PersonAdd color='error' />
 					</Stack>
 					<ButtonGroup
+                        fullWidth
 						variant='contained'
 						aria-label='outlined primary button group'>
 						<Button>One</Button>
-						<Button>Two</Button>
-						<Button>Three</Button>
+						<Button sx={{width:"100px"}}><DateRange/></Button>
 					</ButtonGroup>
 				</Box>
 			</StyledModal>
