@@ -85,11 +85,13 @@ const Add = () => {
 						<PersonAdd color='error' />
 					</Stack>
 					<ButtonGroup
-                        fullWidth
+						fullWidth
 						variant='contained'
 						aria-label='outlined primary button group'>
 						<Button>One</Button>
-						<Button sx={{width:"100px"}}><DateRange/></Button>
+						<Button sx={{ width: '100px' }}>
+							<DateRange />
+						</Button>
 					</ButtonGroup>
 				</Box>
 			</StyledModal>
