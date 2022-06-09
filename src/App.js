@@ -22,7 +22,7 @@ function App() {
 	
 	return (
 	<ThemeProvider theme={darkTheme}>
-		<Box bgcolor={"Background.default"} color={"text.primary"}>
+		<Box >
 			<Navbar />
 			<Stack direction={'row'} spacing={2} justifyContent="space-between">
 				<Sidebar setMode={setMode} mode={mode} />
